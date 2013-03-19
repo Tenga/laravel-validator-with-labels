@@ -12,8 +12,8 @@ class Validator extends Laravel\Validator {
 	/**
 	 * Manually set attribute labels for fields
 	 *
-	 * @param  string  $attribute
-	 * @return string
+	 * @param  array  $attribute_labels
+	 * @return Validator
 	 */
 	public function with_labels($attribute_labels = array()) {
 		$this->attribute_labels = array_merge($this->attribute_labels, $attribute_labels);
@@ -23,8 +23,8 @@ class Validator extends Laravel\Validator {
 	/**
 	 * Clear all set attribute labels for this instance
 	 *
-	 * @param  string  $attribute
-	 * @return string
+	 * @param  array  $attribute_labels
+	 * @return Validator
 	 */
 	public function clear_labels($attribute_labels = array()) {
 		$this->attribute_labels = array();
