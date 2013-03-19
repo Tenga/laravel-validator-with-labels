@@ -23,10 +23,9 @@ class Validator extends Laravel\Validator {
 	/**
 	 * Clear all set attribute labels for this instance
 	 *
-	 * @param  array  $attribute_labels
 	 * @return Validator
 	 */
-	public function clear_labels($attribute_labels = array()) {
+	public function clear_labels() {
 		$this->attribute_labels = array();
 		return $this;
 	}
